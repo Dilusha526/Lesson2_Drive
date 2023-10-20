@@ -1,11 +1,12 @@
 import React from "react";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
+import Button from 'react-bootstrap/Button';
 
 function ContactUs() {
   return (
-    <div style={{width:'100%',background:'#4F709C',height:400}}>
-     <div style={{width:'70%',background:'#EADBC8',height:400}}>
+    <div style={{width:'100%',background:'#4F709C',height:450}}>
+     <div style={{width:'70%',background:'#EADBC8',height:450}}>
         <h1 style={{padding:'2%',fontFamily:'monospace',fontSize:30,fontWeight:'bolder'}}>CONTACT US</h1>
         <div style={{width:'90%',padding:'3%'}}>
       <FloatingLabel
@@ -26,9 +27,13 @@ function ContactUs() {
           style={{ height: '100px',marginTop:10 }}
         />
       </FloatingLabel>
+
+      
+
+      
     </div>
 
-    
+    <Button style={{margin:"3%",marginTop:0}} variant="dark">Send Us</Button>
 </div>
     
     </div>

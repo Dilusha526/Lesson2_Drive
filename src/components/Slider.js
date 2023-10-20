@@ -12,9 +12,6 @@ import MyHeader from "./MyHeader";
 
 function Slider() {
 
-
-    
-
   return (
    <div>
       <div style={{position:'fixed',top:0,zIndex:2000,width:'100%'}}>
