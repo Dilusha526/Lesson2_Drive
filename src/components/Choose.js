@@ -2,8 +2,15 @@ import React from 'react'
 import { Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Logo192 from "../assets/logo192.png"
+import 'aos/dist/aos.css'
+import Aos from 'aos'
+import { useEffect } from 'react';
 
 function Choose() {
+  useEffect(()=>
+  {
+     Aos.init({duration: 1000});
+  },[]);
   return (
     
     <div style={{padding:'4%'}}>
@@ -21,6 +28,9 @@ function Choose() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginBottom:12,borderWidth:0}}
           className="col-md-2"
+          data-aos="flip-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
         >
          
           <Card.Body className='text-center'>
@@ -44,6 +54,9 @@ function Choose() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginRight:20,marginLeft:20,marginBottom:8, borderWidth:0}}
           className="col-md-2"
+          data-aos="flip-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
         >
           
           <Card.Body className='text-center'>
@@ -62,6 +75,9 @@ function Choose() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginBottom:12,borderWidth:0}}
           className="col-md-2"
+          data-aos="flip-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
         >
           
           <Card.Body className='text-center'>
@@ -88,6 +104,9 @@ function Choose() {
         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
         style={{ width: '28rem' ,marginBottom:12,borderWidth:0}}
         className="col-md-2"
+        data-aos="flip-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
       >
        
         <Card.Body className='text-center'>
@@ -108,6 +127,9 @@ function Choose() {
         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
         style={{ width: '28rem' ,marginRight:20,marginLeft:20,marginBottom:5, borderWidth:0}}
         className="col-md-2"
+        data-aos="flip-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
       >
         
         <Card.Body className='text-center'>

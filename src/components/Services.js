@@ -1,8 +1,18 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import 'aos/dist/aos.css'
+import Aos from 'aos'
+import { useEffect } from 'react';
 
 function Services() {
+ 
+
+    useEffect(()=>
+    {
+       Aos.init({duration: 1000});
+    },[]);
+  
   return (
 
     <div style={{padding:'2%',}}>
@@ -20,6 +30,9 @@ function Services() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginBottom:5,}}
           className="col-md-2"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
         >
          
           <Card.Body>
@@ -42,6 +55,9 @@ function Services() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginRight:10,marginLeft:10,marginBottom:5}}
           className="col-md-2"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
         >
           
           <Card.Body>
@@ -65,6 +81,10 @@ function Services() {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ width: '28rem' ,marginBottom:5}}
           className="col-md-2"
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+
         >
           
           <Card.Body>
